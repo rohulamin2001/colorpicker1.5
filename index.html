@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my website</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="main-container">
+        <!-- header area  -->
+        <section class="header-section">
+            <div class="header-text">
+                <h3>Display Color</h3>
+                <p class="change-color-btn" title="click me for generate random color">Random Color</button>
+
+            </div>
+
+        </section>
+        <!-- display color section -->
+        <section class="display-color-section">
+
+        </section>
+
+        <!-- copy and change color mode  -->
+
+        <section class="copy-section">
+            <div class="copys-text">
+                <h3>Save & Copy Color</h3>
+                <div style="display: flex;">
+                    <p class="savebutton" style="padding-right:.5em;">Save</p>
+                    <p class="copybutton">Copy</p>
+                </div>
+            </div>
+            <div class="select-copy-mode">
+                <div class="left-side">
+                    <p>Select Copy Mode</p>
+                </div>
+                <div class="right-side">
+                    <div style="padding-right: .5em;">
+                        <input type="radio" id="hexcolor" name="selectcolorname" checked value="hex">
+                        <label for="hexcolor">Hex</label>
+                    </div>
+
+                    <div> <input type="radio" value="rgb" name="selectcolorname" id="rgbcolor">
+                        <label for="rgbcolor">RGB</label>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- generate color section  -->
+        <section class="generatec-section">
+            <div class="hex-middle-container">
+                <p class="h-p">Hex</p>
+                <div class="sub-middle-container">
+
+                    <div class="input-icon">
+                        #
+                    </div>
+
+                    <div class="hex-input-container">
+                        <input class="hex-field" placeholder="dedede" type="text" value="dedede">
+                    </div>
+                </div>
+
+            </div>
+            <div class="rgb-middle-container">
+
+                <p class="r-p">RGB</p>
+                <div class="input-container">
+                    <input class="rgb-field" placeholder="rgb(222, 222, 222)" type="text" disabled
+                        value="rgb(222, 222, 222)">
+                </div>
+            </div>
+        </section>
+        <!-- adjust rgb section start  -->
+        <section class="adjust-rgb-section">
+            <p>Adjust RGB Color</p>
+            <div class="color-slider-group">
+                <div class="red-color">
+                    <div class="lebal-group">
+                        <p>Red</p>
+                        <p style="color:#ff0000">55</p>
+                    </div>
+
+                    <input value="55" type="range" id="color-slider-red" min="0" max="255">
+                </div>
+
+                <div class="green-color">
+                    <div class="lebal-group">
+                        <p>Green</p>
+                        <p style="color:#008000">55</p>
+                    </div>
+                    <input min="0" max="255" value="55" id="color-slider-green" type="range">
+
+                </div>
+                <div class="blue-color">
+                    <div class="lebal-group">
+                        <p>Blue</p>
+                        <p style="color:#0000ff">55</p>
+                    </div>
+                    <input min="0" max="255" value="55" id="color-slider-blue" type="range">
+                </div>
+            </div>
+
+        </section>
+        <!-- preset section start  -->
+        <section class="preset-section">
+            <p style="text-align: start;border-bottom: 1px solid #0000004f;padding-bottom: .5em;">Preset Color</p>
+            <div class="allpreset">
+                <div class="preset-container">
+
+                </div>
+                <div class="custom-preset-text">
+                    <p>Custom Preset</p>
+                    <p class="resetbtn" style="color: #ff0000;
+                cursor: pointer;">Reset</p>
+                </div>
+
+
+                <div class="custom-preset-container">
+                </div>
+            </div>
+
+        </section>
+        <!-- background preferences section start  -->
+
+
+        <section class="background-prefferences" id="bg-prefferences">
+            <p style="text-align: start;border-bottom: 1px solid #0000004f;padding-bottom: .5em;">Background
+                Prefferences</p>
+            <p style="text-align:start;padding-top: 1em;">Background Preview</p>
+
+            <div class="main-panel">
+                <div class="left-side-footer" style="flex-grow: 1;">
+                    <div class="bg-preview" disabled>
+
+                    </div>
+
+                    <div class="upload-group">
+                        <label for="upload-file">Upload</label>
+                        <label class="remove-file">Remove</label>
+                        <input type="file" id="upload-file" accept="image/*">
+
+                    </div>
+                </div>
+                <div class="right-side-footer">
+                    <p>Background Size</p>
+                    <select name="" id="bg-size" class="bg-prefferences">
+                        <option value="auto">Auto</option>
+                        <option value="contain">Contain</option>
+                        <option value="cover">Cover</option>
+                    </select>
+                    <p>Background Repeat</p>
+                    <select name="" id="bg-repeat" class="bg-prefferences">
+                        <option value="repeat">Repeat</option>
+                        <option value="no-repeat">No-Repeat</option>
+                        <option value="initial">Initial</option>
+                    </select>
+                    <p>Background Position</p>
+                    <select name="" id="bg-position" class="bg-prefferences">
+                        <option value="initial">Inital</option>
+                        <option value="top">Top</option>
+                        <option value="bottom">Bottom</option>
+                        <option value="left">Left</option>
+                        <option value="right">Right</option>
+                        <option value="center">Center</option>
+                    </select>
+                    <p>Background Attachment</p>
+                    <select name="" id="bg-attachment" class="bg-prefferences">
+                        <option value="fixed">Fixed</option>
+                        <option value="inherit">Inherit</option>
+                        <option value="initial">Initial</option>
+                        <option value="scroll">Scroll</option>
+                    </select>
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+
+
+
+
+        <p style="padding:2em 0 .5em 0 ;color:#00000076;font-size: 10px;">Copyright &copy; 2022 by Rohul Amin | All
+            rights reserved</p>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- expand section for mobile devices  -->
+
+    <section class="expand-section">
+        Expand The Display
+    </section>
+
+
+    <!-- <script src="js/jquery-3.6.0.min.js"></script> -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
